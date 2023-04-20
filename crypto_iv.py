@@ -1,3 +1,6 @@
+
+#pip install pycryptodome
+
 from Crypto.Cipher import AES
 #import itertools
 
@@ -7,7 +10,7 @@ key = bytes(key, "UTF-8")
 cipher = AES.new(key, AES.MODE_ECB)
     
 
-def encrypt(plain_text, key):
+def encrypt(plain_text):
     print("Encryption Cipher: ", cipher)
     # When there is no padding, the block size must equal the cipher length
     # Padding is necessary for texts with length different from 16 bytes
